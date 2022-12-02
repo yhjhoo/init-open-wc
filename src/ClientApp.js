@@ -2,7 +2,7 @@ import { LitElement, html, css } from 'lit';
 
 const logo = new URL('../assets/open-wc-logo.svg', import.meta.url).href;
 
-export class AppWc extends LitElement {
+export class ClientApp extends LitElement {
   static get properties() {
     return {
       title: { type: String },
@@ -22,7 +22,7 @@ export class AppWc extends LitElement {
         max-width: 960px;
         margin: 0 auto;
         text-align: center;
-        background-color: var(--app-wc-background-color);
+        background-color: var(--client-app-background-color);
       }
 
       main {
@@ -65,7 +65,7 @@ export class AppWc extends LitElement {
         <div class="logo"><img alt="open-wc logo" src=${logo} /></div>
         <h1>${this.title}</h1>
 
-        <p>Edit <code>src/AppWc.js</code> and save to reload.</p>
+        <p>Edit <code>src/ClientApp.js</code> and save to reload.</p>
         <a
           class="app-link"
           href="https://open-wc.org/guides/developing-components/code-examples/"

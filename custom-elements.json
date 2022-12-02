@@ -1,0 +1,93 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/ClientApp.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "ClientApp",
+          "members": [
+            {
+              "kind": "field",
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "'My app'",
+              "privacy": "public",
+              "attribute": "title"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "fieldName": "title"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "client-app",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "ClientApp",
+          "declaration": {
+            "name": "ClientApp",
+            "module": "src/ClientApp.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/client-app.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "client-app",
+          "declaration": {
+            "name": "ClientApp",
+            "module": "/src/ClientApp.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "stories/client-app.stories.js",
+      "declarations": [
+        {
+          "kind": "variable",
+          "name": "App"
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "default",
+          "declaration": {
+            "module": "stories/client-app.stories.js"
+          }
+        },
+        {
+          "kind": "js",
+          "name": "App",
+          "declaration": {
+            "name": "App",
+            "module": "stories/client-app.stories.js"
+          }
+        }
+      ]
+    }
+  ]
+}

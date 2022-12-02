@@ -1,12 +1,12 @@
 import { html } from 'lit';
 import { fixture, expect } from '@open-wc/testing';
 
-import '../src/test-wc.js';
+import '../src/client-app.js';
 
-describe('TestWc', () => {
+describe('ClientApp', () => {
   let element;
   beforeEach(async () => {
-    element = await fixture(html`<test-wc></test-wc>`);
+    element = await fixture(html`<client-app></client-app>`);
   });
 
   it('renders a h1', () => {

@@ -1,9 +1,9 @@
 import { html } from 'lit';
-import '../src/app-wc-storybook.js';
+import '../src/client-app.js';
 
 export default {
-  title: 'AppWcStorybook',
-  component: 'app-wc-storybook',
+  title: 'ClientApp',
+  component: 'client-app',
   argTypes: {
     backgroundColor: { control: 'color' },
   },
@@ -11,11 +11,11 @@ export default {
 
 function Template({ title, backgroundColor }) {
   return html`
-    <app-wc-storybook
-      style="--app-wc-storybook-background-color: ${backgroundColor || 'white'}"
+    <client-app
+      style="--client-app-background-color: ${backgroundColor || 'white'}"
       .title=${title}
     >
-    </app-wc-storybook>
+    </client-app>
   `;
 }
 
